@@ -25,6 +25,8 @@ jobs:
         uses: pitch-io/clojure-dependabot@main
         with:
           main_branch: 'master'
+          security_updates_only: false
           update_omitted: true
+          allow_dependency: 'org.clojure/clojure'
           include_subdirectories: false
           verbose: true
