@@ -22,7 +22,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Dependabot for Clojure
-        uses: pitch-io/clojure-dependabot@main
+        uses: luigigubello/clojure-dependabot@main
         with:
           main_branch: 'master'
           security_updates_only: false
