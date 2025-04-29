@@ -29,13 +29,13 @@ jobs:
           update_omitted: true
           include_subdirectories: false
           verbose: true
-  generic-updates:
-    name: 'Important updates'
-    runs-on: ubuntu-latest
-    continue-on-error: true
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+  #generic-updates:
+  #  name: 'Important updates'
+  #  runs-on: ubuntu-latest
+  #  continue-on-error: true
+  #  steps:
+  #    - name: Checkout
+  #      uses: actions/checkout@v4
       - name: Dependabot for Clojure generic updates
         uses: luigigubello/clojure-dependabot@main
         with:
