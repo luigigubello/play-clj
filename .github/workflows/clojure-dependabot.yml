@@ -21,7 +21,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Dependabot for Clojure
+      - name: Dependabot for Clojure security updates
+        uses: luigigubello/clojure-dependabot@main
+        with:
+          main_branch: 'master'
+          update_omitted: true
+          include_subdirectories: false
+          verbose: true
+      - name: Dependabot for Clojure generic updates
         uses: luigigubello/clojure-dependabot@main
         with:
           main_branch: 'master'
